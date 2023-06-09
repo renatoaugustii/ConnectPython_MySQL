@@ -1,6 +1,6 @@
 # Nome do Projeto
 
-![Logo](logo.png)
+![Logo](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
 
 Descrição concisa do projeto.
 
