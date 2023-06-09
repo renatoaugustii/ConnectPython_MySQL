@@ -28,8 +28,10 @@ Conexão simples entre Python e MySQL, realizando operações simples em um banc
 Instruções sobre como instalar o projeto em um ambiente local.
 
 1. Clone o repositório: `git clone https://github.com/renatoaugustii/ConnectPython_MySQL.git`
-2. Entre no diretório do projeto: `cd seu-repositorio`
-3. Instale: `pip install mysql-connector-pyton`
+2. Entre no diretório do projeto: `cd ConnectPython_MySQL`
+3. Abra o editor de código. Eu utilizo o VSCode, portando utilizo o comando `code .` para abrir o projeto.
+4. Tenha certeza que você já possui o python instalado. [Download Python](https://www.python.org/)
+5. Instale: `pip install mysql-connector-pyton`
 
 
 ## Contribuição
