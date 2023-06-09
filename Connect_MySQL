@@ -1,0 +1,50 @@
+import mysql.connector
+from mysql.connector import Error
+from tkinter import messagebox
+
+# A tabela utilizada no exemplo se chama T_Users, necessário ajustar para sua necessidade, assim como os campos dessa tabela.
+
+try:
+    # Estabelecer conexão com o banco de dados.
+    # Se o banco estiver em algum site, o nome do server será o nome do site como exemplo: google.com.br
+    # host = 'google.com.br'
+    connection = mysql.connector.connect(
+        host='Nome do Server', 
+        database='Nome da db',
+        user='Nome do User',
+        password='Senha do User'
+    )
+
+    if connection.is_connected():
+        # Dados para inserir
+        nome = "Nome a ser inserido"
+        email = "teste@google.com"
+        senha = "minhasenha"
+
+        # Criar cursor para executar comandos SQL
+        cursor = connection.cursor()
+
+        # Comando SQL para inserir dados
+        insert_query = "INSERT INTO T_Users (Nome, Email, Senha) VALUES (%s, %s, %s)"
+        data = (nome, email, senha)
+
+        # Executar comando SQL para inserir dados
+        cursor.execute(insert_query, data)
+
+        # Confirmar a transação
+        connection.commit()
+
+        # Fechar o cursor e a conexão
+        cursor.close()
+        connection.close()
+
+        # Exibir mensagem de sucesso
+        messagebox.showinfo("Sucesso", "Dados inseridos com sucesso no banco de dados!")
+    else:
+        # Exibir mensagem de erro
+        messagebox.showerror("Erro", "Não foi possível estabelecer conexão com o banco de dados.")
+
+except Error as e:
+    # Exibir mensagem de erro com detalhes
+    messagebox.showerror("Erro", f"Erro ao conectar ao banco de dados: {e}")
+
