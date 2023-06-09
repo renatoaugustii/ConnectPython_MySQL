@@ -32,6 +32,7 @@ Instruções sobre como instalar o projeto em um ambiente local.
 3. Abra o editor de código. Eu utilizo o VSCode, portando utilizo o comando `code .` para abrir o projeto.
 4. Tenha certeza que você já possui o python instalado. [Download Python](https://www.python.org/)
 5. Instale a Biblioteca: `pip install mysql-connector-pyton`
+6. Instale a Biblioteca Tkinter: `pip install tk`
 
 
 ## Contribuição
