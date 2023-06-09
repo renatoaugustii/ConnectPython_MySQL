@@ -2,7 +2,7 @@
 
 ![Logo](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
 
-Descrição concisa do projeto.
+Esse projeto é puramente educacional e não deverá ser utilizado para fins profissionais devido a falta de segurança passada nas informações, utlizei e reutilize apenas como fonte de estudo e testes.
 
 ## Menu de Navegação
 <details>
